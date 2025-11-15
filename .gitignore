@@ -1,48 +1,120 @@
-# Wordpress - ignore core, configuration, examples, uploads and logs.
-# https://github.com/github/gitignore/blob/main/WordPress.gitignore
+# WordPress Theme - ConfiGamer
+# .gitignore
 
-# Core
-#
-# Note: if you want to stage/commit WP core files
-# you can delete this whole section/until Configuration.
-/wp-admin/
-/wp-content/index.php
-/wp-content/languages
-/wp-content/plugins/index.php
-/wp-content/themes/index.php
-/wp-includes/
-/index.php
-/license.txt
-/readme.html
-/wp-*.php
-/xmlrpc.php
+# ================================
+# ARQUIVOS DO SISTEMA
+# ================================
 
-# Configuration
-wp-config.php
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
 
-# Example themes
-/wp-content/themes/twenty*/
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
 
-# Example plugin
-/wp-content/plugins/hello.php
+# Linux
+*~
 
-# Uploads
-/wp-content/uploads/
+# ================================
+# EDITORES / IDEs
+# ================================
 
-# Log files
+# VSCode
+.vscode/
+*.code-workspace
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# PhpStorm / WebStorm
+.idea/
+*.iml
+
+# Notepad++
+*.bak
+
+# Vim
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-v][a-z]
+[._]sw[a-p]
+
+# ================================
+# NODE / NPM (se usar Sass/Gulp)
+# ================================
+
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+
+# ================================
+# WORDPRESS ESPECÍFICO
+# ================================
+
+# Arquivos de compilação (se usar)
+*.min.css
+*.min.js
+*.map
+
+# Logs
 *.log
+error_log
+debug.log
 
-# htaccess
-/.htaccess
+# Cache
+*.cache
+.sass-cache/
 
-# All plugins
-#
-# Note: If you wish to whitelist plugins,
-# uncomment the next line
-#/wp-content/plugins
+# Backups
+*.backup
+*.bak
+*.old
 
-# All themes
-#
-# Note: If you wish to whitelist themes,
-# uncomment the next line
-#/wp-content/themes
+# ================================
+# DESENVOLVIMENTO
+# ================================
+
+# Rascunhos / Testes
+test.php
+temp/
+tmp/
+draft/
+_notes/
+
+# Arquivos de configuração local
+.env
+.env.local
+config.local.php
+
+# ================================
+# ARQUIVOS TEMPORÁRIOS
+# ================================
+
+*.tmp
+*.swp
+*.swo
+*~
+
+# ================================
+# COMPRESSÃO
+# ================================
+
+*.zip
+*.tar.gz
+*.rar
+
+# ================================
+# OUTROS
+# ================================
+
+# Screenshots temporários (manter apenas o oficial)
+screenshot-draft.png
+screenshot-old.png
